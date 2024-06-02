@@ -105,7 +105,11 @@ public class Employee {
 		customer.setMedicalHistory(medicalHistory);
 		return true;
 	}
+<<<<<<< HEAD
 
+=======
+	//seohyun
+>>>>>>> aa61ef0ebeb26e82893df25427c9f8d02f5000b3
 	public boolean confirmCounsel(Counsel counsel) {
 		if(counsel.isConfirmedCounsel()) return false;
 		else {
@@ -117,7 +121,11 @@ public class Employee {
 		if(counsel == null) return false;
 		else return counsel.updateCounsel(counselDetail, note);
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> aa61ef0ebeb26e82893df25427c9f8d02f5000b3
 	public boolean setPaymentInfo(String contractID, PaymentInfo paymentInfo) {
 		Contract contract = contractListImpl.retrieveById(Integer.parseInt(contractID));
 		contract.setPaymentInfo(paymentInfo);
@@ -174,5 +182,8 @@ public class Employee {
 	public void setContractList(ContractList contractListImpl) {this.contractListImpl = contractListImpl;}
 	public void setRuleList(RuleList ruleListImpl) {this.ruleListImpl = ruleListImpl;}
 	public RuleList getRuleList() {return ruleListImpl;}
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa61ef0ebeb26e82893df25427c9f8d02f5000b3
 }

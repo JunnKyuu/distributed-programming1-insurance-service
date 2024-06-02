@@ -146,6 +146,15 @@ public class Customer {
 	public ContractList getContractList() {
 		return contractListImpl;
 	}
+<<<<<<< HEAD
+=======
+	public void setM_Contract(Contract m_Contract) {
+		this.m_Contract = m_Contract;
+  }
+	public ContractList getContractList() {
+		return contractListImpl;
+	}
+>>>>>>> aa61ef0ebeb26e82893df25427c9f8d02f5000b3
 	public void setM_Contract(ContractList contractListImpl) {
 		this.contractListImpl = contractListImpl;
 	}
@@ -170,16 +179,45 @@ public class Customer {
 	public boolean createCompensation(Compensation compensation) {
 		return this.compensationListImpl.add(compensation);
 	}
+<<<<<<< HEAD
 	public void setCounselList(CounselList counselListImpl) {
 		this.counselListImpl = counselListImpl;
 	}
 	
+=======
+
+	public boolean updateCompensation(Compensation compensation, int compensationID) {
+		return this.compensationListImpl.update(compensation, compensationID);
+	}
+	public boolean createBill(Compensation compensation, int compensationID) {
+		return this.compensationListImpl.update(compensation, compensationID);
+	}
+	public void setCounselList(CounselList counselListImpl) {
+		this.counselListImpl = counselListImpl;
+	}
+	public boolean requestCounsel(Counsel counsel) {
+		return counselListImpl.add(counsel);
+	}
+	public boolean deleteCounsel(int counselID) {
+		return counselListImpl.delete(counselID);
+	}
+
+	public void setCounselList(CounselList counselListImpl) {
+		this.counselListImpl = counselListImpl;
+	}
+	
+
+>>>>>>> aa61ef0ebeb26e82893df25427c9f8d02f5000b3
 	public void setPaymentList(PaymentList paymentListImpl) {
 		this.paymentListImpl = paymentListImpl;
 	}
 	public void setInsuranceList(InsuranceList insuranceListImpl) {
 		this.insuranceListImpl = insuranceListImpl;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> aa61ef0ebeb26e82893df25427c9f8d02f5000b3
 	public boolean deleteContract(Contract contract) {
 		this.contractListImpl.deleteById(contract.getContractID());
 		return true;
@@ -187,5 +225,9 @@ public class Customer {
 	public boolean payPremium(Payment payment, int cardNumber, int cvcNumber, int password) {
 		return payment.processPayment(cardNumber, cvcNumber, password);
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> aa61ef0ebeb26e82893df25427c9f8d02f5000b3
 }
